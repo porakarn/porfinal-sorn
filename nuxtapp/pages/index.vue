@@ -1,24 +1,14 @@
 <template>
   <section class="container">
-    <div>
-      <logo/>
-      <h1 class="title">
-        nuxtffapp
-      </h1>
-      <h2 class="subtitle">
-        My astounding Nuxt.js project
-      </h2>
-<div>
+  
     <b-form-input v-model="text1"
                   type="text"
                   placeholder="Enter your name"></b-form-input>
     <p>Value: {{ text1 }}</p>
   </div>
-
-      <div class="links">
-        <a href="https://nuxtjs.org/" target="_blank" class="button--green">Documentffffation</a>
-        <a href="https://github.com/nuxt/nuxt.js" target="_blank" class="button--grey">GiddtHub</a>
-      </div>
+<nuxt-link to="/user">Users</nuxt-link>
+      
+      <button @click="logout" > Log out </button>
     </div>
   </section>
 </template>
@@ -30,6 +20,14 @@ export default {
     data () {
     return {
       text1: ''
+    }
+  },
+   methods: {
+    logout () {
+       this.$store.dispatch('setToken', null)
+      this.$store.dispatch('setUser', null)
+            // this.$store.dispatch('setProfile', null)
+
     }
   },
   components: {
