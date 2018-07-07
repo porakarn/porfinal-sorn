@@ -22,7 +22,7 @@
                      :max-rows="9">
     </b-form-textarea>
     <!-- <pre class="mt-3">{{ text }}</pre> -->
-    <br>
+    <br>dd
       <b-button type="submit" style="background-color: #33C1C1; border: 0px; padding-left: 36px;
     padding-right: 36px;">เรียบร้อย</b-button>
           </form>

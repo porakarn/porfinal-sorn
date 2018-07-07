@@ -18,7 +18,7 @@
       <b-form-input required id="input-large" size="lg" v-model="contactUrl" type="text" placeholder="Line url / Facebook page url "></b-form-input>
     </b-col>
   </b-row>
-<br>
+<br>cc
   <div>
   <b-button type="submit" style="background-color: #33C1C1; border: 0px; padding-left: 36px;
     padding-right: 36px;">สมัคร</b-button>
